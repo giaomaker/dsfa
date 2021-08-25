@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: '1,10 * * * *'
   repository_dispatch:
-    types: jd_ddnc_farmpark
+    types: jd_Redmi
 jobs:
   build:
 
@@ -34,7 +34,7 @@ jobs:
           npm install
       - name: '运行'
         run: |
-          node jd_ddnc_farmpark.js
+          node jd_Redmi.js
           
           
         env:
